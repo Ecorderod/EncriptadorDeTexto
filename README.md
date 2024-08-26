@@ -1,2 +1,51 @@
-# EncriptadorDeTexto
-El proyecto "Encriptador de Texto" permite encriptar y desencriptar mensajes según reglas específicas, transformando letras en combinaciones de caracteres. La aplicación incluye funciones como copiar el texto resultante al portapapeles y ofrece una interfaz amigable con animaciones interactivas para mejorar la experiencia del usuario.
+# Encriptador de Mensajes
+
+Una aplicación web intuitiva y fácil de usar que permite encriptar y desencriptar mensajes de texto. Desarrollada con tecnologías web modernas, esta herramienta asegura la privacidad de tus mensajes con un diseño elegante y adaptable.
+
+## 🎯 Funcionalidades Principales
+
+- **🔐 Encriptación y Desencriptación:** Convierte mensajes de texto en cadenas encriptadas y viceversa con un solo clic.
+- **📋 Copiar al Portapapeles:** Funcionalidad para copiar fácilmente los mensajes procesados, optimizando el flujo de trabajo.
+- **🛡️ Validación de Entrada:** Acepta solo letras en minúsculas sin acentos, garantizando una encriptación precisa.
+- **✨ Animaciones y Efectos:** Incluye transiciones y efectos visuales que enriquecen la experiencia del usuario.
+- **📱 Diseño Responsivo:** Adaptable a cualquier dispositivo, asegurando una experiencia de usuario fluida en PC, tabletas y móviles.
+
+## 🖼️ Vistas del Proyecto
+
+### Vista en Escritorio
+![Vista en Escritorio](ruta/de/imagen/desktop.png)
+
+### Vista en Tablet
+![Vista en Tablet](ruta/de/imagen/tablet.png)
+
+### Vista en Móvil
+![Vista en Móvil](ruta/de/imagen/mobile.png)
+
+## 🚀 Cómo Usar
+
+1. **Introduce el Texto:** Escribe el mensaje que deseas encriptar o desencriptar.
+2. **Encripta o Desencripta:** Utiliza los botones correspondientes para procesar el texto.
+3. **Copia el Resultado:** Haz clic en el botón "Copiar" para guardar el resultado en el portapapeles.
+
+## 🛠️ Tecnologías Utilizadas
+
+- **HTML5:** Base estructural de la aplicación.
+- **CSS3:** Estilización y diseño visual.
+- **JavaScript:** Lógica y funcionalidad interactiva.
+- **FontAwesome:** Iconografía utilizada en la interfaz.
+
+---
+
+© 2024
+
+## 🏷️ Etiquetas
+
+- Encriptación
+- Desencriptación
+- JavaScript
+- CSS
+- HTML
+- Frontend
+- Aplicación Web
+- Responsividad
+- Alura
