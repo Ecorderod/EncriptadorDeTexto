@@ -1,4 +1,4 @@
-# Encriptador de Mensajes
+# Encriptador de Textos
 
 Una aplicación web intuitiva y fácil de usar que permite encriptar y desencriptar mensajes de texto. Desarrollada con tecnologías web modernas, esta herramienta asegura la privacidad de tus mensajes con un diseño elegante y adaptable.
 
