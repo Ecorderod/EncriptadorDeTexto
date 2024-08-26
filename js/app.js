@@ -29,7 +29,7 @@ function iniciarAplicacion() {
     mostrarElementos(desencriptarTexto(cadenaUsuario)); // Muestra el texto desencriptado
   });
 
-  // Evento para el botón "Copiar"
+  // Evento para el botón "Copiar" y lógica aplicada a la animación del botón.
 const btnCopiar = document.getElementById("btn-copiar");
 btnCopiar.addEventListener("click", async () => {
     try {
