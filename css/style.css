@@ -424,7 +424,7 @@ footer {
     }
 }
 
-/* Clase que activa el cambio de color */
+/* Clase que activa el cambio de color del boton copiar para crear animación*/
 .resaltar {
     background-color: #c0c0c0; /* Color de fondo que resalta */
     transition: background-color 0.5s ease; /* Transición suave */
@@ -432,7 +432,7 @@ footer {
     padding: 10px; /* Añadir relleno interno para que el redondeo sea más visible */
 }
 
-/* Para que el color vuelva a su estado original */
+/* Para que el color vuelva a su estado original despues de la animación */
 .contenedor__textos__derecha:not(.resaltar) {
     background-color: white; /* Asegura que el fondo vuelva a ser blanco */
     border-radius: 15px; /* Mantener el redondeo incluso sin resaltar */
