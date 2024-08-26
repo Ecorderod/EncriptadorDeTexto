@@ -1,0 +1,439 @@
+/* Importación de fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Variables CSS para colores, fuentes y otros estilos reutilizables */
+
+:root {
+    --color-fondo: #EFF1FA;
+    --color-borde-boton: 1px solid #0A3871;
+    --color-boton-encriptar: #0A3871;
+    --color-boton-desencriptar: #EFF1FA;
+    --color-boton-encriptar-hover: #052051;
+    --color-boton-desencriptar-hover: #D8DFE8;
+    --color-fuente-principal: #0A3871;
+    --color-fuente-secundaria: #495057;
+    --color-fuente-terciaria: #343A40;
+    --fuente-inter: "Inter", sans-serif;
+}
+
+/* Reseteo de márgenes y paddings para todos los elementos */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos básicos para el HTML y el cuerpo de la página */
+html, body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--color-fondo);
+}
+
+/* Estilo del contenedor principal */
+.contenido {
+    display: flex;
+    flex: 1;
+    padding: 2% 2% 2% 10%;
+    width: 88%;
+}
+
+/* Logo de la sección izquierda */
+.logo__alura {
+    background-image: url("../assets/logo-alura.png");
+    width: 120px;
+    height: 48px;
+}
+
+/* Contenedor de la sección izquierda */
+.seccion__izquierda {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 8% 5rem 2rem 0;
+}
+
+/* Contenedor para mostrar mensajes de alerta */
+.alerta__texto {
+    display: flex;
+    gap: 8px;
+    padding: 16px 0;
+}
+
+/* Estilo del icono de alerta */
+#icono-alerta {
+    background-image: url("../assets/icono-exclamacion.png");
+    width: 16px;
+    height: 16px;
+}
+
+/* Estilo del texto de alerta */
+#texto-alerta {
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-fuente-secundaria);
+}
+
+/* Estilo del textarea de entrada del usuario */
+textarea {
+    border: 0;
+    resize: none;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+/* Estilo específico del textarea del usuario */
+.texto__usuario {
+    flex-grow: 1;
+    width: 100%;
+    min-height: 300px;
+    color: var(--color-fuente-principal);
+    font-size: 2rem;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    background-color: var(--color-fondo);
+}
+
+/* Remueve el borde por defecto en el foco del textarea */
+textarea:focus {
+    outline: none; /* Elimina el borde por defecto en focus */
+}
+
+/* Estilos para la barra de desplazamiento */
+textarea::-webkit-scrollbar {
+    width: 6px; /* Ancho de la barra de desplazamiento */
+}
+
+textarea::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color del fondo de la barra de desplazamiento */
+}
+textarea::-webkit-scrollbar-thumb {
+    background: #888; /* Color de la barra de desplazamiento */
+    border-radius: 3px; /* Bordes redondeados */
+}
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color de la barra de desplazamiento al pasar el ratón */
+}
+
+.texto__usuario::placeholder {
+    color: var(--color-fuente-principal) /* Cambia el color del texto del placeholder */
+}
+/* Estilos para la sección de botones a la izquierda */
+.div__botones__izquierda {
+    display: flex;/* Utiliza flexbox para alinear los botones */
+    gap: 24px;/* Espacio entre los botones */
+}
+
+/* Estilos generales para los botones de la izquierda */
+.boton__izquierda {
+    flex: 1; /* Cada botón ocupa un espacio equitativo dentro de su contenedor */
+    border-radius: 24px; /* Bordes redondeados de los botones */
+    padding: 24px; /* Espaciado interno de los botones */
+    border: var(--color-borde-boton); /* Color del borde del botón, definido en una variable CSS */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-family: var(--fuente-inter); /* Fuente tipográfica del botón, definida en una variable CSS */
+    font-weight: 400; /* Grosor de la fuente */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+/* Botón específico para la acción de encriptar */
+#btn-encriptar {
+    background-color: var(--color-boton-encriptar); /* Color de fondo definido en una variable CSS */
+    color: white; /* Color del texto */
+}
+
+/* Botón específico para la acción de desencriptar */
+#btn-desencriptar {
+    background-color: var(--color-boton-desencriptar); /* Color de fondo definido en una variable CSS */
+    color: #0A3871; /* Color del texto */
+}
+
+/* Cambios en el color de fondo al pasar el ratón sobre el botón de encriptar */
+#btn-encriptar:hover {
+    background-color: var(--color-boton-encriptar-hover);
+}
+
+/* Cambios en el color de fondo al pasar el ratón sobre el botón de desencriptar */
+#btn-desencriptar:hover {
+    background-color: var(--color-boton-desencriptar-hover);
+}
+
+
+/* Estilos generales para la sección a la derecha */
+.seccion__derecha {
+    display: flex; /* Utiliza flexbox para la disposición de los elementos */
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+    gap: 32px; /* Espacio entre los elementos */
+    width: 22%; /* Ancho de la sección */
+    border-radius: 32px; /* Bordes redondeados */
+    padding: 0 2rem; /* Espaciado interno de la sección */
+    background-color: white; /* Fondo blanco */
+}
+
+/* Estilo para la imagen dentro de la sección derecha */
+.imagen__persona {
+    width: 100%; /* La imagen ocupa todo el ancho disponible */
+}
+
+/* Contenedor para los textos dentro de la sección derecha */
+.contenedor__textos__derecha {
+    display: flex; /* Flexbox para la disposición de los textos */
+    flex-direction: column; /* Organiza los textos en columna */
+    gap: 16px; /* Espacio entre los textos */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 5%; /* Espaciado interno del contenedor */
+    font-family: var(--fuente-inter); /* Fuente tipográfica definida en una variable CSS */
+    transition: transform 0.3s ease; /* Transición suave en la transformación */
+}
+
+/* Estilo para los títulos de texto */
+.titulo__texto {
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.5rem; /* Tamaño de fuente mayor para el título */
+    color: var(--color-fuente-terciaria); /* Color del título definido en una variable CSS */
+}
+
+/* Estilo para la descripción del texto */
+.descripcion__texto {
+    font-weight: 400; /* Grosor normal del texto */
+    font-size: 16px; /* Tamaño estándar de la fuente */
+    color: var(--color-fuente-secundaria); /* Color del texto definido en una variable CSS */
+}
+
+/* Estilo para la sección de texto desencriptado (inicialmente oculta) */
+.seccion__desencriptado {
+    display: none; /* Oculta la sección inicialmente */
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: space-between; /* Espacio entre los elementos */
+    gap: 32px; /* Espacio entre los elementos */
+    width: 22%; /* Ancho de la sección */
+    border-radius: 32px; /* Bordes redondeados */
+    padding: 2rem; /* Espaciado interno de la sección */
+    background-color: white; /* Fondo blanco */
+}
+
+/* Estilo del texto desencriptado */
+.texto__desencriptado {
+    flex: 1; /* El texto ocupa todo el espacio disponible */
+    font-family: var(--fuente-inter); /* Fuente tipográfica definida en una variable CSS */
+    font-weight: 400; /* Grosor normal del texto */
+    font-size: 24px; /* Tamaño de fuente mayor */
+    color: var(--color-fuente-secundaria); /* Color del texto definido en una variable CSS */
+}
+
+/* Estilo del botón "Copiar" */
+#btn-copiar {
+    border-radius: 24px;
+    padding: 24px;
+    background-color: var(--color-boton-desencriptar);
+    color: #0A3871;
+    border: var(--color-borde-boton);
+    cursor: pointer;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Cambios en el color de fondo al pasar el ratón sobre el botón "Copiar" */
+#btn-copiar:hover {
+    background-color: var(--color-boton-desencriptar-hover);
+}
+
+/* Pseudo-elemento antes del contenido del botón "Copiar" */
+#btn-copiar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-boton-encriptar);
+    /* Elimina la transición de la propiedad left */
+    z-index: 0;
+}
+
+/* Estilo del contenido del botón "Copiar" */
+#btn-copiar span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Animación y transiciones para el estado "copiado" */
+#btn-copiar.copiado {
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#btn-copiar.copiado::before {
+    left: 0; /* Mueve el pseudo-elemento al interior del botón inmediatamente */
+    /* No se necesita la transición aquí */
+}
+
+
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #c0c0c0; /* Color de fondo del pie de página */
+    font-family: var(--fuente-inter); /* Fuente tipográfica del pie de página, definida en una variable CSS */
+    font-weight: 400; /* Grosor de la fuente */
+    font-size: 0.8rem; /* Tamaño pequeño de la fuente */
+    color: black; /* Color del texto */
+    text-align: center; /* Texto centrado */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Estilo para los iconos de redes sociales en el pie de página */
+.iconos__redes {
+    display: flex; /* Flexbox para alinear los iconos */
+    justify-content: center; /* Centra los iconos horizontalmente */
+    gap: 30px; /* Espacio entre los iconos */
+    padding: 0.3rem 0; /* Espaciado interno vertical */
+}
+
+/* Estilo para los enlaces dentro de los iconos de redes sociales */
+.iconos__redes a {
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    font-size: 24px; /* Tamaño de los iconos */
+    color: #0c0c0c; /* Color de los iconos */
+}
+
+/* Media query para pantallas medianas, ajusta el diseño */
+@media (max-width: 1320px) {
+
+    /* Ajusta el padding y el ancho del contenedor principal */
+    .contenido {
+        padding: 2% 2% 2% 6%; /* Ajuste del padding en el contenedor */
+        width: 92%; /* Ajuste del ancho del contenedor */
+    }
+
+    /* Ajusta el padding y el ancho de la sección izquierda */
+    .seccion__izquierda {
+        width: auto; /* Ancho automático para ajustarse al contenedor */
+        padding: 8% 3rem 2rem 0; /* Ajuste del padding */
+    }
+
+    /* Mantiene el ancho de la sección derecha */
+    .seccion__derecha {
+        width: 22%; /* Ancho fijo para la sección derecha */
+    }
+}
+
+/* Media query para pantallas con un ancho máximo de 1080px */
+@media (max-width: 1080px) { 
+    /* Ajusta el padding y el ancho del contenedor principal */
+    .contenido {
+        padding: 2% 2% 2% 2%; /* Ajuste del padding */
+        width: 96%; /* Ajuste del ancho */
+    }
+
+    /* Ajusta el padding de la sección izquierda */
+    .seccion__izquierda {
+        padding: 8% 2rem 2rem 0; /* Ajuste del padding */
+    }
+}
+
+/* Media query para pantallas con un ancho máximo de 768px (diseño para móviles) */
+@media (max-width: 768px) {
+
+    /* Ajusta el diseño del contenedor principal para pantallas pequeñas */
+    .contenido {
+        flex-direction: column; /* Organiza los elementos en columna */
+        gap: 4rem; /* Espacio entre los elementos */
+        padding: 4.5rem 2.5rem 2.5rem 2.5rem; /* Ajuste del padding */
+        width: auto; /* Ancho automático */
+    }
+
+    /* Ajusta el ancho y el padding de la sección izquierda */
+    .seccion__izquierda {
+        width: auto; /* Ancho automático */
+        padding: 0; /* Sin padding adicional */
+    }
+
+    /* Ajusta el ancho de la sección derecha */
+    .seccion__derecha {
+        width: auto; /* Ancho automático */
+    }
+
+    /* Ajusta el ancho de la sección de texto desencriptado */
+    .seccion__desencriptado {
+        width: auto; /* Ancho automático */
+    }
+
+    /* Ajusta el estilo del texto desencriptado para pantallas pequeñas */
+    .texto__desencriptado {
+        flex: none; /* No expande el texto para llenar el contenedor */
+        overflow: auto; /* Permite el desplazamiento si el contenido es demasiado grande */
+        max-height: 800px; /* Altura máxima para el texto desencriptado */
+    }
+
+    /* Ajusta el tamaño del logo para pantallas pequeñas */
+    .logo__alura {
+        background-image: url("../assets/logo-alura-tablet.png"); /* Cambia la imagen del logo */
+        width: 31px; /* Ancho del logo */
+        height: 51px; /* Altura del logo */
+    }
+
+    /* Oculta la imagen de la persona en pantallas pequeñas */
+    .imagen__persona {
+        display: none; /* No muestra la imagen */
+    }
+}
+
+/* Media query para pantallas con un ancho máximo de 375px (diseño para dispositivos móviles pequeños) */
+@media (max-width: 375px) {
+
+    /* Ajusta el diseño del contenedor principal para dispositivos móviles muy pequeños */
+    .contenido {
+        flex-direction: column; /* Organiza los elementos en columna */
+        padding: 1.5rem 1rem 1rem 1rem; /* Ajuste del padding */
+    }
+
+    /* Ajusta el tamaño del logo para dispositivos móviles pequeños */
+    .logo__alura {
+        width: 32px; /* Ancho del logo */
+        height: 48px; /* Altura del logo */
+    }
+
+    /* Organiza los botones a la izquierda en columna */
+    .div__botones__izquierda {
+        flex-direction: column; /* Organiza los botones en columna */
+    }
+
+    /* Ajusta el padding del contenedor de textos a la derecha */
+    .contenedor__textos__derecha {
+        padding: 8%; /* Ajuste del padding */
+    }
+
+    /* Ajusta el tamaño de la sección desencriptada */
+    .seccion__desencriptado {
+        width: auto; /* Ancho automático */
+        height: auto; /* Altura automática */
+    }
+
+    /* Ajusta el mínimo alto del texto del usuario */
+    .texto__usuario {
+        min-height: 200px; /* Altura mínima para el texto del usuario */
+    }
+}
+
+/* Clase que activa el cambio de color */
+.resaltar {
+    background-color: #c0c0c0; /* Color de fondo que resalta */
+    transition: background-color 0.5s ease; /* Transición suave */
+    border-radius: 15px; /* Redondear las esquinas */
+    padding: 10px; /* Añadir relleno interno para que el redondeo sea más visible */
+}
+
+/* Para que el color vuelva a su estado original */
+.contenedor__textos__derecha:not(.resaltar) {
+    background-color: white; /* Asegura que el fondo vuelva a ser blanco */
+    border-radius: 15px; /* Mantener el redondeo incluso sin resaltar */
+}

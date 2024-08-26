@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto challenge alura</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Enlace a los iconos de FontAwesome -->
+</head>
+
+<body>
+    <main class="contenido"> <!-- Contenedor principal -->
+        <picture class="logo__alura"></picture> <!-- Imagen del logo -->
+        <section class="seccion__izquierda"> <!-- Sección izquierda -->
+            <textarea class="texto__usuario" placeholder="Ingrese el texto aquí"></textarea>
+            <!-- Área de texto para el usuario -->
+            <span class="alerta__texto"> <!-- Alerta de texto para indicar restricciones -->
+                <picture id="icono-alerta"></picture> <!-- Icono de alerta -->
+                <p id="texto-alerta">Solo letras minúsculas y sin acentos</p>
+            </span>
+            <div class="div__botones__izquierda"> <!-- Contenedor de botones en la sección izquierda -->
+                <button class="boton__izquierda" id="btn-encriptar">Encriptar</button> <!-- Botón para encriptar -->
+                <button class="boton__izquierda" id="btn-desencriptar">Desencriptar</button>
+                <!-- Botón para desencriptar -->
+            </div>
+        </section>
+        <section class="seccion__derecha"> <!-- Sección derecha -->
+            <img class="imagen__persona" src="assets/img-persona.png" alt="persona buscando algo">
+            <!-- Imagen decorativa -->
+            <div class="contenedor__textos__derecha"> <!-- Contenedor de textos en la sección derecha -->
+                <p class="titulo__texto">Ningún mensaje fue encontrado</p> <!-- Título del mensaje -->
+                <p class="descripcion__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <!-- Descripción del mensaje -->
+            </div>
+        </section>
+        <section class="seccion__desencriptado"> <!-- Sección de texto desencriptado -->
+            <textarea class="texto__desencriptado" readonly></textarea> <!-- Área de texto desencriptado -->
+            <button class="boton__copiar" id="btn-copiar"><span class="texto__boton__copiar">Copiar</span></button>
+            <!-- Botón para copiar el texto desencriptado -->
+        </section>
+    </main>
+    <footer> <!-- Pie de página -->
+        <p>Made with ❤ by Eduin Nadid Cordero D' Luyz</p> <!-- Desarrollador -->
+        <div class="iconos__redes"> <!-- Contenedor de iconos de redes sociales -->
+            <a href="https://github.com/Ecorderod" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github fa-bounce"></i> <!-- Icono de GitHub -->
+            </a>
+            <a href="https://www.linkedin.com/in/eduin-nadid-cordero-d-luyz-8b7749140/" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin fa-bounce"></i> <!-- Icono de LinkedIn -->
+            </a>
+        </div>
+        <p>2024</p> <!-- Año de copyright -->
+    </footer>
+    <script src="js/app.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+
+</html>
