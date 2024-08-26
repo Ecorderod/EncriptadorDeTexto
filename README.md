@@ -13,13 +13,13 @@ Una aplicación web intuitiva y fácil de usar que permite encriptar y desencrip
 ## 🖼️ Vistas del Proyecto
 
 ### Vista en Escritorio
-![Vista en Escritorio](ruta/de/imagen/desktop.png)
+![Vista en Escritorio](./assets/desktop.jpeg)
 
 ### Vista en Tablet
-![Vista en Tablet](ruta/de/imagen/tablet.png)
+![Vista en Tablet](./assets/tablet.jpeg)
 
 ### Vista en Móvil
-![Vista en Móvil](ruta/de/imagen/mobile.png)
+![Vista en Móvil](./assets/mobile.jpeg)
 
 ## 🚀 Cómo Usar
 
