@@ -36,7 +36,7 @@ Una aplicación web intuitiva y fácil de usar que permite encriptar y desencrip
 
 ---
 
-© 2024
+
 
 ## 🏷️ Etiquetas
 
